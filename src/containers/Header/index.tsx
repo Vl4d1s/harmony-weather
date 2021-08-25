@@ -57,14 +57,22 @@ export class Header extends React.Component<OwnProps, HeaderState> {
 		const { cartToggle } = this.state;
 		const cartItemsLength = cartItems && cartItems.length ? cartItems.length : 0;
 
+		const headerLinks = [{
+			name: 'Home',
+			path: RoutesPath.ROOT
+		}, {
+			name: 'Weather',
+			path: RoutesPath.WEATHER
+		}];
+
+		const renderedHeaderLinks = headerLinks.map((link) => { return <li key={link.name}><Link to={link.path}>{link.name}</Link></li>; });
+
 		return (
 			<>
 				<nav>
 					<div className="container">
 						<ul className="navbar-left">
-							<li>
-								<Link to={RoutesPath.ROOT}>Home</Link>
-							</li>
+							{renderedHeaderLinks}
 						</ul>
 
 						<ul className="navbar-right">
