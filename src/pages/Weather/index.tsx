@@ -17,6 +17,7 @@ export class Weather extends React.Component<OwnProps> {
 		return (
 			<div>
 				Weather
+				<i class="fas fa-sun" />
 			</div>
 		);
 	}
