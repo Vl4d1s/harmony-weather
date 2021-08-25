@@ -16,7 +16,7 @@ export class Weather extends React.Component<OwnProps> {
 	render() {
 		return (
 			<div>
-				Weather New Container
+				Weather
 			</div>
 		);
 	}

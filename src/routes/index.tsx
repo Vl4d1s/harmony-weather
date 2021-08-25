@@ -9,6 +9,7 @@ import ErrorPage from 'pages/ErrorPage';
 import DeviceGalleryPage from 'pages/DevicesGallery';
 import Checkout from 'pages/Checkout';
 import FormExample from 'pages/FormExample';
+import Weather from 'pages/Weather';
 
 /* -------------- Routes Paths --------------- */
 import RoutesPath from './RoutesPath';
@@ -20,6 +21,7 @@ export default (
 		<Switch>
 			<Route exact path={RoutesPath.ROOT} step={stepTypes.DEVICE_GALLERY.name} component={DeviceGalleryPage} />
 			<Route exact path={RoutesPath.CHECKOUT} step={stepTypes.CHECKOUT.name} component={Checkout} />
+			<Route exact path={RoutesPath.WEATHER} component={Weather} />
 			<Route
 				exact
 				path={RoutesPath.FORM_EXAMPLE}
