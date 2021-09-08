@@ -7,10 +7,11 @@ export interface CatalogState {
 
 export enum TypesNames {
 	GET_DEVICE_LIST = 'GET_DEVICE_LIST',
-	SET_DEVICE_LIST = 'SET_DEVICE_LIST'
+	SET_DEVICE_LIST = 'SET_DEVICE_LIST',
 }
 
 export declare function GetDeviceListFunction(): GetDeviceListAction;
+
 export declare function SetDeviceListFunction(deviceList: Device[]): SetDeviceListAction;
 
 export interface ActionCreator {

@@ -10,7 +10,7 @@ export function* addSaga(action: AddToCartAction) {
 	const cartId: number = yield select(cartSelector.getCartId);
 
 	if (!cartId || !cartItems || !cartItems.length) {
-		yield put(CartActions.setCartId(Math.floor((Math.random() * 10000000) + 1).toString()));
+		yield put(CartActions.setCartId(Math.floor(Math.random() * 10000000 + 1).toString()));
 	}
 
 	yield put(instance.actions.add(item.id, item));

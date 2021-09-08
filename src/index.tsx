@@ -7,7 +7,8 @@ import { LocalizeProvider } from 'react-localize-redux';
 import { ToastProvider } from 'react-toast-notifications';
 
 /* -------- Load Styles --------- */
-import 'bootstrap/dist/css/bootstrap.min.css'; // Can be replace with other style framework
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'semantic-ui-css/semantic.min.css';
 import 'public/sass/style.scss';
 
 /* -------- Harmony Features Bootstrap --------- */

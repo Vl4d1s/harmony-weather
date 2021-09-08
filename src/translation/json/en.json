@@ -7,6 +7,9 @@
     "clearCartButton": "Clear Cart",
     "checkoutButton": "Checkout"
   },
+  "Weather":{
+    
+  },
   "checkout": {
     "pageTitle": "Checkout",
     "totalPriceTitle": "Total Price"

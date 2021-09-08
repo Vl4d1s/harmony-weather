@@ -12,7 +12,5 @@ function* watchGetDevices() {
 }
 
 export function* catalogSaga() {
-	yield all([
-		fork(watchGetDevices)
-	]);
+	yield all([fork(watchGetDevices)]);
 }
